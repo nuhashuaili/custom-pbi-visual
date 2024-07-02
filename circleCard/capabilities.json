@@ -1,0 +1,86 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Measure",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "circle": {
+        "properties": {
+            "circleColor": {
+                "type": {
+                    "fill": {
+                        "solid": {
+                            "color": true
+                        }
+                    }
+                }
+            },
+            "circleThickness": {
+                "type": {
+                    "numeric": true
+                }
+            },
+
+            "circleLineColor": {
+                "type": {
+                    "fill": {
+                        "solid": {
+                            "color": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    "text": {
+        "properties": {        
+            "textColor": {
+                "type": {
+                    "fill": {
+                        "solid": {
+                            "color": true
+                        }
+                    }
+                }
+            },
+            "fontFamily": {
+                "type": {
+                  "formatting": {
+                    "fontFamily": true
+                  }
+                }
+              }       
+        }
+        },
+
+        "label": {
+            "properties": {        
+                "labelColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                { "measure": { "max": 1 } }
+            ],
+            "single": {
+                "role": "measure"
+            }
+        }
+    ],
+    "privileges": []
+}
